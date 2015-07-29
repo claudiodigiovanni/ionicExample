@@ -1,0 +1,16 @@
+<ion-view view-title="Lista Segnalazioni">
+  <ion-content>
+    <ion-list ng-repeat="s in vm.segnalazioni">
+      <ion-item class="item-remove-animate item-avatar item-icon-right"  type="item-text-wrap" href="#/tab/chats/{{s.id}}">
+        <img ng-src="{{s.face}}">
+        <h2>{{s.name}}</h2>
+        <p>{{s.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(s)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
