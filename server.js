@@ -2,11 +2,11 @@ var express = require('express');
 var faker = require('faker');
 var bodyParser = require ('body-parser');
 var restful = require('node-restful');
-
+var cors = require ('cors')
 
 var mongoose = restful.mongoose;
 
-var cors = require ('cors')
+
 
 
 var app = express();
